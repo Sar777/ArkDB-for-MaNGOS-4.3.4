@@ -1,0 +1,1 @@
+copy /a database\*.sql mangos.sql
