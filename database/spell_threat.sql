@@ -1,0 +1,53 @@
+-- MySQL dump 10.13  Distrib 5.1.41, for Win32 (ia32)
+--
+-- Host: localhost    Database: mangos
+-- ------------------------------------------------------
+-- Server version	5.5.11
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `spell_threat`
+--
+
+DROP TABLE IF EXISTS `spell_threat`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `spell_threat` (
+  `entry` mediumint(8) unsigned NOT NULL,
+  `Threat` smallint(6) NOT NULL,
+  `multiplier` float NOT NULL DEFAULT '0',
+  `ap_bonus` float NOT NULL DEFAULT '0',
+  PRIMARY KEY (`entry`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='CTDB Spell Threat';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `spell_threat`
+--
+
+LOCK TABLES `spell_threat` WRITE;
+/*!40000 ALTER TABLE `spell_threat` DISABLE KEYS */;
+INSERT INTO `spell_threat` VALUES (78,20,0,0),(770,108,0,0),(1715,61,0,0),(2139,300,0,0),(6343,17,0,0),(6572,155,0,0),(7386,100,0,0),(12797,25,0,0),(16857,108,0,0),(17735,200,0,0),(20243,101,0,0),(20736,100,0,0),(20925,20,0,0),(23922,160,0,0),(24394,580,0,0),(33745,285,0,0),(33878,129,0,0);
+/*!40000 ALTER TABLE `spell_threat` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2012-09-20 11:19:56

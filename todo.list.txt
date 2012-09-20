@@ -1,0 +1,23 @@
+#####################
+### Elwynn Forest ###
+#####################
+-- Fear No Evil
+/* Quests			= 28806, 28808, 28809, 28810, 28811, 28812, 28813, 29082
+NPC 				= 50047
+SpellClick 			= 93072
+TriggerSpell 		= 93097
+NPC after script 	= 50378 
+Need KillCredit by SpellClik */
+
+-- Extinguishing Hope
+/* Quests			= 26391
+NPC 				= 42940
+SpellHit 			= 80208
+Need KillCredit by SpellHit */
+
+####################
+### Gilneas City ###
+####################
+-- By the Skin of His Teeth
+/* Quests			= 14154
+Need Quest Complete after 2 minures (maybe by quest_start_script?) */
